@@ -58,7 +58,7 @@ void PCA9632Output::write_state(float state) {
   if (state > 1.0f) state = 1.0f;
 
   uint8_t pwm = (uint8_t) lroundf(state * 255.0f);
-  this->parent->set_pwm(this->channel_, pwm);
+  this->parent->set_pwm(this->channel, pwm);
 }
 
 }
