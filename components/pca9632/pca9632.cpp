@@ -31,7 +31,7 @@ void PCA9632Component::setup() {
     this->set_pwm(ch, 0);
   }
 
-  initialized{true};
+  initialized = true;
 }
 
 void PCA9632Component::dump_config() {

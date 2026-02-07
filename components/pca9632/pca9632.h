@@ -29,7 +29,7 @@ class PCA9632Component : public Component, public i2c::I2CDevice {
 
 class PCA9632Output : public output::FloatOutput {
  public:
-  PCA9632Output(PCA9632Component *parent, uint8_t channel) : parent_(parent), channel_(channel) {}
+  PCA9632Output(PCA9632Component *parent, uint8_t channel) : parent(parent), channel(channel) {}
   void write_state(float state) override;
 
  protected:
